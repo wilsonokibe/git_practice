@@ -1,0 +1,12 @@
+<ul>
+    <li> <code>remote -v</code> - this will show you what your remote repository is configured as. This is helpful for debugging.</li>
+    <li> <code>remote add <i>remote_name</i> <i>remote url</i></code> - This adds a new remote. If you type <code>remote -v</code> and nothing shows up, it means you have no remotes and you will need to use this command to add one. Usually, you only need to do this once when you are setting up a project.</li>
+    <li> <code>push <i>remote_name</i> <i>branch_name</i></code> - Update your remote repository to match your local repository. The remote name is almost always <code>origin</code>. The branch name is whatever branch you want to push to (more on branching further down). For instance, if you are working on the <code>main</code> branch, which is the default branch, the command would be:</li>
+    <ul>
+        <li> <code>git push origin main</code></li>
+    </ul>
+    <li> <code>pull <i>remote_name</i> <i>branch_name</i></code> - update your local repository with the changes made to the remote. This will be important when you are working with someone else, and you want to get the changes they made. Similar to pushing, remote name will almost always be <code>origin</code>. Branch name is whatever branch you want to pull from. So if you wanted to get the recent changes to <code>main</code>, the command would be:</li>
+    <ul>
+        <li> <code>git pull origin main</code> <b>note</b>: This will pull the changes in to whatever branch you are currently working in </li>
+    </ul>
+</ul>
